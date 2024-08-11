@@ -1,0 +1,88 @@
+/* Container for the whole schemes section */
+.schemes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual scheme item styling */
+.scheme-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scheme-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Scheme name and date styling */
+.scheme-item h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333333;
+}
+
+.scheme-item p {
+    font-size: 1em;
+    color: #666666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Link styling for PDF and other links */
+.scheme-item a {
+    display: block;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.scheme-item a:hover {
+    color: #0056b3;
+}
+
+/* Link for PDF with an icon */
+.scheme-item .pdf-link {
+    display: flex;
+    align-items: center;
+}
+
+.scheme-item .pdf-link img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Styling for fallback image */
+.scheme-item .scheme-image {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.scheme-item .scheme-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading indicator styling */
+.loading-indicator {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,110 @@
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.news-title {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.news-title:hover {
+    color: #007bff;
+}
+
+.news-date {
+    margin-top: 5px;
+    color: #585858;
+}
+
+.news-image {
+    flex-shrink: 0;
+}
+
+.news-image img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out, box-shadow 1s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(0); /* Set initial position */
+  }
+  
+  .news-card.slide-in-left {
+    animation: slideInLeft 3s forwards;
+  }
+  
+  .news-card.slide-in-right {
+    animation: slideInRight 3s forwards;
+  }
+
+  /* Loading indicator styling */
+.loading-indicator {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}

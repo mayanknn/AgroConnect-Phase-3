@@ -1,0 +1,95 @@
+/* upload.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Soft, natural background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Green accent for an agricultural feel */
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-spacing: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    vertical-align: middle;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50; /* Green for labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+input[type="file"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Green for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #2E7D32; /* Even darker green on click */
+    transform: translateY(0);
+}
+
+table tr td:first-child {
+    width: 40%;
+}
+
+table tr td:last-child {
+    width: 60%;
+}

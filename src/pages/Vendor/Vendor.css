@@ -1,0 +1,18 @@
+nav button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  width: 150px; /* Set a fixed width to prevent shifting */
+}
+
+nav button:hover {
+  background-color: #388E3C; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  color: #f1f1f1; /* Lighten text color on hover */
+}

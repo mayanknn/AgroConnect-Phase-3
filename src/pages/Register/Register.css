@@ -1,0 +1,143 @@
+/* General Container */
+.register-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.register-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: transparent; /* Remove background */
+}
+
+.register-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4caf50; /* Dark green for agricultural theme */
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    background: transparent; /* Remove background */
+}
+
+.register-form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.register-form td {
+    padding: 10px;
+}
+
+.register-form label {
+    font-weight: bold;
+}
+
+.register-form input {
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    width: 100%;
+    background: transparent; /* Remove background */
+}
+
+.submit-button {
+    background-color: #4caf50; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.login-link {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.image-preview {
+    margin-top: 10px;
+}
+
+.image-preview img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.cancel-button {
+    background-color: #f44336;
+}
+
+.modal-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
